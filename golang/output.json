@@ -1,0 +1,702 @@
+[
+  {
+    "enterprise_name": "วิสาหกิจชุมชน ส่งเสริมและผลิตเมล็ดพันธุ์ข้าวชุมชนตำบลปากช่อง",
+    "business_group": "การผลิตสินค้า",
+    "business_type": "การผลิตพืช",
+    "product_name": "เมล็ดพันธุ์ข้าว",
+    "image_url": "https://smce2023.doae.go.th/smce1/images/Product/27002021000220060907113027.jpg"
+  },
+  {
+    "enterprise_name": "วิสาหกิจชุมชน กลุ่มเกษตรผลิตไม้กฤษณา",
+    "business_group": "การผลิตสินค้า",
+    "business_type": "การผลิตพืช",
+    "product_name": "กล้าไม้กฤษณา",
+    "image_url": "https://smce2023.doae.go.th/smce1/images/Product/32101101000120061020142540.gif"
+  },
+  {
+    "enterprise_name": "วิสาหกิจชุมชน กลุ่มแม่บ้านเกษตรกรหนองโพรง",
+    "business_group": "การผลิตสินค้า",
+    "business_type": "การผลิตพืช",
+    "product_name": "ข้าวสาร",
+    "image_url": "https://smce2023.doae.go.th/smce1/images/Product/32103011000320061121093233.gif"
+  },
+  {
+    "enterprise_name": "วิสาหกิจชุมชน ตำบลดอนตูม",
+    "business_group": "การผลิตสินค้า",
+    "business_type": "การผลิตพืช",
+    "product_name": "มะเขื่อเทศบริโภคสด และแปรรูป",
+    "image_url": "https://smce2023.doae.go.th/smce1/ProductManage/images/star_red.gif"
+  },
+  {
+    "enterprise_name": "วิสาหกิจชุมชน กลุ่มพัฒนาอาชีพชมพู่หวานบ้านหนองตะเคียน",
+    "business_group": "การผลิตสินค้า",
+    "business_type": "การผลิตพืช",
+    "product_name": "ชมพู่",
+    "image_url": "https://smce2023.doae.go.th/smce1/ProductManage/images/star_red.gif"
+  },
+  {
+    "enterprise_name": "วิสาหกิจชุมชน กลุ่มพัฒนาอาชีพชมพู่หวานบ้านหนองตะเคียน",
+    "business_group": "การผลิตสินค้า",
+    "business_type": "การผลิตพืช",
+    "product_name": "ชมพู่พันธุ์ทับทิมจันท์",
+    "image_url": "https://smce2023.doae.go.th/smce1/ProductManage/images/star_red.gif"
+  },
+  {
+    "enterprise_name": "วิสาหกิจชุมชน กลุ่มไม้ประดับบ้านสระแก้ว",
+    "business_group": "การผลิตสินค้า",
+    "business_type": "การผลิตพืช",
+    "product_name": "การผลิตไม้ประดับและไม้ประดับขุดล้อม",
+    "image_url": "https://smce2023.doae.go.th/smce1/images/Product/32102011000420061123110851.gif"
+  },
+  {
+    "enterprise_name": "วิสาหกิจชุมชน กลุ่มผู้ผลิตเห็ดนางฟ้าตำบลพนานิคม",
+    "business_group": "การผลิตสินค้า",
+    "business_type": "การผลิตพืช",
+    "product_name": "เห็ดนางฟ้า",
+    "image_url": "https://smce2023.doae.go.th/smce1/images/Product/32108031000120061003124818.gif"
+  },
+  {
+    "enterprise_name": "วิสาหกิจชุมชน กลุ่มผู้ผลิตและรวบรวมหมากครบวงจรบ้านน้ำใส",
+    "business_group": "การผลิตสินค้า",
+    "business_type": "การผลิตพืช",
+    "product_name": "แปรรูปผลผลิตหมาก",
+    "image_url": "https://smce2023.doae.go.th/smce1/images/Product/32107011000320061004133327.gif"
+  },
+  {
+    "enterprise_name": "วิสาหกิจชุมชน ห้วยหมอนทองมุ่งพัฒนา",
+    "business_group": "การผลิตสินค้า",
+    "business_type": "การผลิตพืช",
+    "product_name": "กระเจี๊ยบเขียว",
+    "image_url": "https://smce2023.doae.go.th/smce1/ProductManage/images/star_red.gif"
+  },
+  {
+    "enterprise_name": "วิสาหกิจชุมชน กลุ่มไม้ดอกเชิงธุรกิจ",
+    "business_group": "การผลิตสินค้า",
+    "business_type": "การผลิตพืช",
+    "product_name": "เบญจมาศ ดาวเรือง คัตเตอร์",
+    "image_url": "https://smce2023.doae.go.th/smce1/images/Product/blank.gif"
+  },
+  {
+    "enterprise_name": "วิสาหกิจชุมชน เต็งเจริญฟาร์มเห็ด",
+    "business_group": "การผลิตสินค้า",
+    "business_type": "การผลิตพืช",
+    "product_name": "เห็ดนางฟ้าภูฏาน",
+    "image_url": "https://smce2023.doae.go.th/smce1/images/Product/58417101000220061012105209.jpg"
+  },
+  {
+    "enterprise_name": "วิสาหกิจชุมชน กลุ่มปรับปรุงมะม่วงคุณภาพดีเพื่อการส่งออก",
+    "business_group": "การผลิตสินค้า",
+    "business_type": "การผลิตพืช",
+    "product_name": "มะม่วง",
+    "image_url": "https://smce2023.doae.go.th/smce1/images/Product/11507051000520061016100808.jpg"
+  },
+  {
+    "enterprise_name": "วิสาหกิจชุมชน นางแก้วผลิตพันธุ์ข้าว",
+    "business_group": "การผลิตสินค้า",
+    "business_type": "การผลิตพืช",
+    "product_name": "เมล็ดพันธุ์ข้าว",
+    "image_url": "https://smce2023.doae.go.th/smce1/images/Product/27007161000120061017154458.gif"
+  },
+  {
+    "enterprise_name": "วิสาหกิจชุมชน ผู้ผลิตไม้ดอกไม้ประดับบ้านดงบัง",
+    "business_group": "การผลิตสินค้า",
+    "business_type": "การผลิตพืช",
+    "product_name": "ลีลาวดี, โมก, ไม้ไทย",
+    "image_url": "https://smce2023.doae.go.th/smce1/images/Product/32501111000120061025102850.gif"
+  },
+  {
+    "enterprise_name": "วิสาหกิจชุมชน กลุ่มส่งเสริมการปลูกผัก ม.9 ต.ห้วยบง",
+    "business_group": "การผลิตสินค้า",
+    "business_type": "การผลิตพืช",
+    "product_name": "ผักปลอดภัยจากสารพิษ",
+    "image_url": "https://smce2023.doae.go.th/smce1/images/Product/11913051000320061031122616.jpg"
+  },
+  {
+    "enterprise_name": "วิสาหกิจชุมชน กลุ่มศูนย์ส่งเสริมและผลิตพันธุ์ข้าวชุมชน",
+    "business_group": "การผลิตสินค้า",
+    "business_type": "การผลิตพืช",
+    "product_name": "ข้าว",
+    "image_url": "https://smce2023.doae.go.th/smce1/images/Product/27307021000220061114142806.gif"
+  },
+  {
+    "enterprise_name": "วิสาหกิจชุมชน กลุ่มแม่บ้านคลองบางบ่อ",
+    "business_group": "การผลิตสินค้า",
+    "business_type": "การผลิตพืช",
+    "product_name": "ผลิตพันธุ์ยางพาราพันธุ์ดี",
+    "image_url": "https://smce2023.doae.go.th/smce1/images/Product/32104041000120061114154124.gif"
+  },
+  {
+    "enterprise_name": "วิสาหกิจชุมชน กลุ่มเกษตรอินทรีย์บ้านโคกวัด",
+    "business_group": "การผลิตสินค้า",
+    "business_type": "การผลิตพืช",
+    "product_name": "ข้าวอินทรีย์",
+    "image_url": "https://smce2023.doae.go.th/smce1/images/Product/43206101000220061122112451.jpg"
+  },
+  {
+    "enterprise_name": "วิสาหกิจชุมชน ส่งเสริมเกษตรอินทรีย์นาดีน้อย",
+    "business_group": "การผลิตสินค้า",
+    "business_type": "การผลิตพืช",
+    "product_name": "ข้าวซ้อมมือ",
+    "image_url": "https://smce2023.doae.go.th/smce1/images/Product/43501111000120061201142648.JPG"
+  },
+  {
+    "enterprise_name": "วิสาหกิจชุมชน กลุ่มแม่บ้านเกษตรกรบ้านโคกตะเคียนสามัคคี",
+    "business_group": "การผลิตสินค้า",
+    "business_type": "การผลิตพืช",
+    "product_name": "ผักปลอดสารพิษ",
+    "image_url": "https://smce2023.doae.go.th/smce1/images/Product/43206071000120181219162938.jpg"
+  },
+  {
+    "enterprise_name": "วิสาหกิจชุมชน กลุ่มปลูกผักปลอดภัยจากสารพิษหมู่บ้านปศุสัตว์-เกษตรมูโน๊ะ",
+    "business_group": "การผลิตสินค้า",
+    "business_type": "การผลิตพืช",
+    "product_name": "ผักปลอดภัยจากสารพิษ",
+    "image_url": "https://smce2023.doae.go.th/smce1/images/Product/59602081000120061218172833.JPG"
+  },
+  {
+    "enterprise_name": "วิสาหกิจชุมชน ผู้ผลิตปุ๋ยหมักชีวภาพบ้านชากเล็ก",
+    "business_group": "การผลิตสินค้า",
+    "business_type": "การผลิตพืช",
+    "product_name": "พืชผักถั่วฝักยาว",
+    "image_url": "https://smce2023.doae.go.th/smce1/images/Product/32105051000120061228113642.JPG"
+  },
+  {
+    "enterprise_name": "วิสาหกิจชุมชน กลุ่มแม่บ้านเกษตรกรบ้านผารังหมี",
+    "business_group": "การผลิตสินค้า",
+    "business_type": "การผลิตพืช",
+    "product_name": "ข้าวกล้องหอมมะลิ",
+    "image_url": "https://smce2023.doae.go.th/smce1/ProductManage/images/star_red.gif"
+  },
+  {
+    "enterprise_name": "วิสาหกิจชุมชน กลุ่มเกษตรกรปลูกไม้ผลตำบลหนองกุง",
+    "business_group": "การผลิตสินค้า",
+    "business_type": "การผลิตพืช",
+    "product_name": "มะม่วงนอกฤดู",
+    "image_url": "https://smce2023.doae.go.th/smce1/images/Product/44601151000620070110115744.jpg"
+  },
+  {
+    "enterprise_name": "วิสาหกิจชุมชน ทอผ้ามัดหมี่บ้านงิ้ว",
+    "business_group": "การผลิตสินค้า",
+    "business_type": "การผลิตพืช",
+    "product_name": "ปลูกผักปลอดสารพิษ",
+    "image_url": "https://smce2023.doae.go.th/smce1/ProductManage/images/star_red.gif"
+  },
+  {
+    "enterprise_name": "วิสาหกิจชุมชน ศูนย์ส่งเสริมและผลิตพันธุ์ข้าวชุมชนตำบลระแหง",
+    "business_group": "การผลิตสินค้า",
+    "business_type": "การผลิตพืช",
+    "product_name": "เมล็ดพันธุ์ข้าว",
+    "image_url": "https://smce2023.doae.go.th/smce1/images/Product/11305011000820070207154514.JPG"
+  },
+  {
+    "enterprise_name": "วิสาหกิจชุมชน ศูนย์ส่งเสริมและผลิตพันธุ์ข้าวชุมชนตำบลโคกไทย",
+    "business_group": "การผลิตสินค้า",
+    "business_type": "การผลิตพืช",
+    "product_name": "เมล็ดพันธุ์ข้าวเหลืองประทิว",
+    "image_url": "https://smce2023.doae.go.th/smce1/images/Product/32509021000320070213100345.JPG"
+  },
+  {
+    "enterprise_name": "วิสาหกิจชุมชน ศูนย์ส่งเสริมและผลิตพันธุ์ข้าวชุมชนบ้านไผ่งาม",
+    "business_group": "การผลิตสินค้า",
+    "business_type": "การผลิตพืช",
+    "product_name": "ผลิตเมล็ดพันธุ์ข้าวพิษณุโลก 2",
+    "image_url": "https://smce2023.doae.go.th/smce1/images/Product/32509041000220070213102619.JPG"
+  },
+  {
+    "enterprise_name": "วิสาหกิจชุมชน ศูนย์ส่งเสริมและผลิตพันธุ์ข้าวชุมชนบ้านดอนไผ่ผู้",
+    "business_group": "การผลิตสินค้า",
+    "business_type": "การผลิตพืช",
+    "product_name": "ผลิตเมล็ดพันธุ์ข้าวพิษณุโลก2",
+    "image_url": "https://smce2023.doae.go.th/smce1/images/Product/32509041000320070213103129.JPG"
+  },
+  {
+    "enterprise_name": "วิสาหกิจชุมชน ผู้ปลูกผักปลอดภัยจากสารพิษบ้านนามน",
+    "business_group": "การผลิตสินค้า",
+    "business_type": "การผลิตพืช",
+    "product_name": "ปลูกพืชผัก",
+    "image_url": "https://smce2023.doae.go.th/smce1/images/Product/44906031000620070214162841.jpg"
+  },
+  {
+    "enterprise_name": "วิสาหกิจชุมชน ปรับปรุงคุณภาพไม้ผลตำบลโรงหีบ",
+    "business_group": "การผลิตสินค้า",
+    "business_type": "การผลิตพืช",
+    "product_name": "ส้มโอ",
+    "image_url": "https://smce2023.doae.go.th/smce1/images/Product/27502041000120070306120504.jpg"
+  },
+  {
+    "enterprise_name": "วิสาหกิจชุมชน ปรับปรุงคุณภาพไม้ผลตำบลโรงหีบ",
+    "business_group": "การผลิตสินค้า",
+    "business_type": "การผลิตพืช",
+    "product_name": "ลิ้นจี่",
+    "image_url": "https://smce2023.doae.go.th/smce1/images/Product/27502041000120070306122529.jpg"
+  },
+  {
+    "enterprise_name": "วิสาหกิจชุมชน กลุ่มคัดแยกผลไม้ชุมชนดุซงญอ",
+    "business_group": "การผลิตสินค้า",
+    "business_type": "การผลิตพืช",
+    "product_name": "การคัดแยกผลผลิตลองกองเพื้อจำหน่าย",
+    "image_url": "https://smce2023.doae.go.th/smce1/images/Product/59612021000220070312105051.JPG"
+  },
+  {
+    "enterprise_name": "วิสาหกิจชุมชน กลุ่มทอเสื่อกกแม่บ้านเกษตรกรบ้านโนนเปือย",
+    "business_group": "การผลิตสินค้า",
+    "business_type": "การผลิตพืช",
+    "product_name": "เสื่อกก",
+    "image_url": "https://smce2023.doae.go.th/smce1/ProductManage/images/star_red.gif"
+  },
+  {
+    "enterprise_name": "วิสาหกิจชุมชน ปรับปรุงคุณภาพไม้ผลตำบลโรงหีบ",
+    "business_group": "การผลิตสินค้า",
+    "business_type": "การผลิตพืช",
+    "product_name": "กิ่งพันธุ์ส้มโอ",
+    "image_url": "https://smce2023.doae.go.th/smce1/images/Product/27502041000120070326105444.jpg"
+  },
+  {
+    "enterprise_name": "วิสาหกิจชุมชน ปรับปรุงคุณภาพไม้ผลตำบลโรงหีบ",
+    "business_group": "การผลิตสินค้า",
+    "business_type": "การผลิตพืช",
+    "product_name": "กิ่งลิ้นจี่",
+    "image_url": "https://smce2023.doae.go.th/smce1/images/Product/27502041000120070326105715.jpg"
+  },
+  {
+    "enterprise_name": "วิสาหกิจชุมชน กลุ่มแปรรูบผักกาดหัวพุหิน",
+    "business_group": "การผลิตสินค้า",
+    "business_type": "การผลิตพืช",
+    "product_name": "ผักกาดหัว",
+    "image_url": "https://smce2023.doae.go.th/smce1/images/Product/27010021000620070619101849.jpg"
+  },
+  {
+    "enterprise_name": "วิสาหกิจชุมชน กลุ่มปลูกผักปลอดภัยจากสารพิษบ้านห้วยพระ",
+    "business_group": "การผลิตสินค้า",
+    "business_type": "การผลิตพืช",
+    "product_name": "ผักปลอดภัยจากสารพิษบ้านห้วยพระ",
+    "image_url": "https://smce2023.doae.go.th/smce1/images/Product/58020021000520071005110302.jpg"
+  },
+  {
+    "enterprise_name": "วิสาหกิจชุมชน ผู้ผลิตสละปลอดสารพิษตำบลเสาเภา",
+    "business_group": "การผลิตสินค้า",
+    "business_type": "การผลิตพืช",
+    "product_name": "สละปลอดสารพิษ",
+    "image_url": "https://smce2023.doae.go.th/smce1/images/Product/58014041000420071008115953.jpg"
+  },
+  {
+    "enterprise_name": "วิสาหกิจชุมชน กลุ่มปรับปรุงคุณภาพไม้ผลตำบลแควอ้อม",
+    "business_group": "การผลิตสินค้า",
+    "business_type": "การผลิตพืช",
+    "product_name": "ส้มโอ",
+    "image_url": "https://smce2023.doae.go.th/smce1/images/Product/blank.gif"
+  },
+  {
+    "enterprise_name": "วิสาหกิจชุมชน กลุ่มส่งเสริมเกษตรบ้านป่ากอ",
+    "business_group": "การผลิตสินค้า",
+    "business_type": "การผลิตพืช",
+    "product_name": "ผักปลอดสารพิษ (ผักเหมียง)",
+    "image_url": "https://smce2023.doae.go.th/smce1/ProductManage/images/star_red.gif"
+  },
+  {
+    "enterprise_name": "วิสาหกิจชุมชน กลุ่มเทพราชบอนสีเฉลิมพระเกียรติครองสิริราชสมบัติ",
+    "business_group": "การผลิตสินค้า",
+    "business_type": "การผลิตพืช",
+    "product_name": "บอนสีพันธุ์กระบี่",
+    "image_url": "https://smce2023.doae.go.th/smce1/images/Product/32405071000220080610120925.jpg"
+  },
+  {
+    "enterprise_name": "วิสาหกิจชุมชน กลุ่มเทพราชบอนสีเฉลิมพระเกียรติครองสิริราชสมบัติ",
+    "business_group": "การผลิตสินค้า",
+    "business_type": "การผลิตพืช",
+    "product_name": "บอนสีพันธุ์ก้านกล้วย",
+    "image_url": "https://smce2023.doae.go.th/smce1/images/Product/32405071000220080610121519.jpg"
+  },
+  {
+    "enterprise_name": "วิสาหกิจชุมชน กลุ่มเทพราชบอนสีเฉลิมพระเกียรติครองสิริราชสมบัติ",
+    "business_group": "การผลิตสินค้า",
+    "business_type": "การผลิตพืช",
+    "product_name": "บอนสีพันธุ์กำไลเงินหรือมะลิวัลย์",
+    "image_url": "https://smce2023.doae.go.th/smce1/images/Product/32405071000220080610121747.jpg"
+  },
+  {
+    "enterprise_name": "วิสาหกิจชุมชน กลุ่มเทพราชบอนสีเฉลิมพระเกียรติครองสิริราชสมบัติ",
+    "business_group": "การผลิตสินค้า",
+    "business_type": "การผลิตพืช",
+    "product_name": "บอนสีพันธุ์เจ้าหญิงชนิดนิรันดร์",
+    "image_url": "https://smce2023.doae.go.th/smce1/images/Product/32405071000220080610121926.jpg"
+  },
+  {
+    "enterprise_name": "วิสาหกิจชุมชน กลุ่มเทพราชบอนสีเฉลิมพระเกียรติครองสิริราชสมบัติ",
+    "business_group": "การผลิตสินค้า",
+    "business_type": "การผลิตพืช",
+    "product_name": "บอนสีพันธุ์ชมพูสยาม",
+    "image_url": "https://smce2023.doae.go.th/smce1/images/Product/32405071000220080610122304.jpg"
+  },
+  {
+    "enterprise_name": "วิสาหกิจชุมชน กลุ่มเทพราชบอนสีเฉลิมพระเกียรติครองสิริราชสมบัติ",
+    "business_group": "การผลิตสินค้า",
+    "business_type": "การผลิตพืช",
+    "product_name": "บอนสีพันธุ์ชายชล",
+    "image_url": "https://smce2023.doae.go.th/smce1/images/Product/32405071000220080610122426.jpg"
+  },
+  {
+    "enterprise_name": "วิสาหกิจชุมชน กลุ่มเทพราชบอนสีเฉลิมพระเกียรติครองสิริราชสมบัติ",
+    "business_group": "การผลิตสินค้า",
+    "business_type": "การผลิตพืช",
+    "product_name": "บอนสีพันธุ์ดอนเจดีย์",
+    "image_url": "https://smce2023.doae.go.th/smce1/images/Product/32405071000220080610122615.jpg"
+  },
+  {
+    "enterprise_name": "วิสาหกิจชุมชน กลุ่มเทพราชบอนสีเฉลิมพระเกียรติครองสิริราชสมบัติ",
+    "business_group": "การผลิตสินค้า",
+    "business_type": "การผลิตพืช",
+    "product_name": "บอนสีพันธุ์ทองเหม็นหรือนายจันหนวดเขี้ยว",
+    "image_url": "https://smce2023.doae.go.th/smce1/images/Product/32405071000220080610122841.jpg"
+  },
+  {
+    "enterprise_name": "วิสาหกิจชุมชน กลุ่มเทพราชบอนสีเฉลิมพระเกียรติครองสิริราชสมบัติ",
+    "business_group": "การผลิตสินค้า",
+    "business_type": "การผลิตพืช",
+    "product_name": "บอนสีพันธุ์ธิดาสวรรค์",
+    "image_url": "https://smce2023.doae.go.th/smce1/images/Product/32405071000220080610123001.jpg"
+  },
+  {
+    "enterprise_name": "วิสาหกิจชุมชน กลุ่มเทพราชบอนสีเฉลิมพระเกียรติครองสิริราชสมบัติ",
+    "business_group": "การผลิตสินค้า",
+    "business_type": "การผลิตพืช",
+    "product_name": "บอนสีพันธุ์นราทัศน์",
+    "image_url": "https://smce2023.doae.go.th/smce1/images/Product/32405071000220080610123544.jpg"
+  },
+  {
+    "enterprise_name": "วิสาหกิจชุมชน กลุ่มเทพราชบอนสีเฉลิมพระเกียรติครองสิริราชสมบัติ",
+    "business_group": "การผลิตสินค้า",
+    "business_type": "การผลิตพืช",
+    "product_name": "บอนสีพันธุ์เพชรมงคล",
+    "image_url": "https://smce2023.doae.go.th/smce1/images/Product/32405071000220080610123658.jpg"
+  },
+  {
+    "enterprise_name": "วิสาหกิจชุมชน กลุ่มเทพราชบอนสีเฉลิมพระเกียรติครองสิริราชสมบัติ",
+    "business_group": "การผลิตสินค้า",
+    "business_type": "การผลิตพืช",
+    "product_name": "บอนสีพันธุ์แพรวา",
+    "image_url": "https://smce2023.doae.go.th/smce1/images/Product/32405071000220080610124658.jpg"
+  },
+  {
+    "enterprise_name": "วิสาหกิจชุมชน กลุ่มเทพราชบอนสีเฉลิมพระเกียรติครองสิริราชสมบัติ",
+    "business_group": "การผลิตสินค้า",
+    "business_type": "การผลิตพืช",
+    "product_name": "บอนสีพันธุ์ม้าแก้ว",
+    "image_url": "https://smce2023.doae.go.th/smce1/images/Product/32405071000220080610124529.jpg"
+  },
+  {
+    "enterprise_name": "วิสาหกิจชุมชน กลุ่มเทพราชบอนสีเฉลิมพระเกียรติครองสิริราชสมบัติ",
+    "business_group": "การผลิตสินค้า",
+    "business_type": "การผลิตพืช",
+    "product_name": "บอนสีพันธุ์ยอดอัศวิน",
+    "image_url": "https://smce2023.doae.go.th/smce1/images/Product/32405071000220080610125007.jpg"
+  },
+  {
+    "enterprise_name": "วิสาหกิจชุมชน กลุ่มเทพราชบอนสีเฉลิมพระเกียรติครองสิริราชสมบัติ",
+    "business_group": "การผลิตสินค้า",
+    "business_type": "การผลิตพืช",
+    "product_name": "บอนสีพันธุ์ยุทธหัตถี",
+    "image_url": "https://smce2023.doae.go.th/smce1/images/Product/32405071000220080610125128.jpg"
+  },
+  {
+    "enterprise_name": "วิสาหกิจชุมชน กลุ่มเทพราชบอนสีเฉลิมพระเกียรติครองสิริราชสมบัติ",
+    "business_group": "การผลิตสินค้า",
+    "business_type": "การผลิตพืช",
+    "product_name": "บอนสี (ลูกไม้ไหม่ยังไม่ได้จดทะเบียนตั้งชื่ออย่างเป็นทางการ)",
+    "image_url": "https://smce2023.doae.go.th/smce1/images/Product/32405071000220080610125322.jpg"
+  },
+  {
+    "enterprise_name": "วิสาหกิจชุมชน กลุ่มเทพราชบอนสีเฉลิมพระเกียรติครองสิริราชสมบัติ",
+    "business_group": "การผลิตสินค้า",
+    "business_type": "การผลิตพืช",
+    "product_name": "บอนสีพันธุ์ศรีเงินยวง",
+    "image_url": "https://smce2023.doae.go.th/smce1/images/Product/32405071000220080610125822.jpg"
+  },
+  {
+    "enterprise_name": "วิสาหกิจชุมชน กลุ่มเทพราชบอนสีเฉลิมพระเกียรติครองสิริราชสมบัติ",
+    "business_group": "การผลิตสินค้า",
+    "business_type": "การผลิตพืช",
+    "product_name": "บอนสีพันธุ์หนุมานเข้าเฝ้าฯ",
+    "image_url": "https://smce2023.doae.go.th/smce1/images/Product/32405071000220080610130049.jpg"
+  },
+  {
+    "enterprise_name": "วิสาหกิจชุมชน กลุ่มเทพราชบอนสีเฉลิมพระเกียรติครองสิริราชสมบัติ",
+    "business_group": "การผลิตสินค้า",
+    "business_type": "การผลิตพืช",
+    "product_name": "บอนสีพันธุ์เหลืองทองประทาน",
+    "image_url": "https://smce2023.doae.go.th/smce1/images/Product/32405071000220080610130200.jpg"
+  },
+  {
+    "enterprise_name": "วิสาหกิจชุมชน ผู้ปลูกผักปลอดสารพิษบ้านพุม่วง",
+    "business_group": "การผลิตสินค้า",
+    "business_type": "การผลิตพืช",
+    "product_name": "ถั่วฝักยาวอินทรีย์",
+    "image_url": "https://smce2023.doae.go.th/smce1/images/Product/27602071000120080827135955.jpg"
+  },
+  {
+    "enterprise_name": "วิสาหกิจชุมชน กลุ่มชมพู่เพชรหนองโสน",
+    "business_group": "การผลิตสินค้า",
+    "business_type": "การผลิตพืช",
+    "product_name": "ชมพู่เพชรสายรุ้ง",
+    "image_url": "https://smce2023.doae.go.th/smce1/ProductManage/images/star_red.gif"
+  },
+  {
+    "enterprise_name": "วิสาหกิจชุมชน กลุ่มแม่บ้านเกษตรกรปลูกหม่อนเลี้ยงไหมพญาราม",
+    "business_group": "การผลิตสินค้า",
+    "business_type": "การผลิตพืช",
+    "product_name": "หม่อนชำถุง",
+    "image_url": "https://smce2023.doae.go.th/smce1/images/Product/43201031000420081107091616.jpg"
+  },
+  {
+    "enterprise_name": "วิสาหกิจชุมชน กลุ่มพัฒนาการผลิตมะม่วงเพื่อการส่งออก",
+    "business_group": "การผลิตสินค้า",
+    "business_type": "การผลิตพืช",
+    "product_name": "มะม่วงคุณภาพ",
+    "image_url": "https://smce2023.doae.go.th/smce1/images/Product/66508021000120081110100827.jpg"
+  },
+  {
+    "enterprise_name": "วิสาหกิจชุมชน กลุ่มแม่บ้านเกษตรกรปลูกหม่อนเลี้ยงไหมพญาราม",
+    "business_group": "การผลิตสินค้า",
+    "business_type": "การผลิตพืช",
+    "product_name": "หม่อนชำถุง",
+    "image_url": "https://smce2023.doae.go.th/smce1/images/Product/blank.gif"
+  },
+  {
+    "enterprise_name": "วิสาหกิจชุมชน กลุ่มเกษตรกรทำสวนตรอกนอง",
+    "business_group": "การผลิตสินค้า",
+    "business_type": "การผลิตพืช",
+    "product_name": "มังคุด",
+    "image_url": "https://smce2023.doae.go.th/smce1/images/Product/blank.gif"
+  },
+  {
+    "enterprise_name": "วิสาหกิจชุมชน กลุ่มปรับปรุงคุณภาพมังคุดตรอกนอง",
+    "business_group": "การผลิตสินค้า",
+    "business_type": "การผลิตพืช",
+    "product_name": "มังคุดคุณภาพ",
+    "image_url": "https://smce2023.doae.go.th/smce1/images/Product/32202101000520181031152311.jpeg"
+  },
+  {
+    "enterprise_name": "วิสาหกิจชุมชน กลุ่มผู้ปลูกผักปลอดภัยจากสารพิษบางแคเหนือ",
+    "business_group": "การผลิตสินค้า",
+    "business_type": "การผลิตพืช",
+    "product_name": "ผักปลอดภัยจากสารพิษ",
+    "image_url": "https://smce2023.doae.go.th/smce1/images/Product/11040021000220190125165923.jpg"
+  },
+  {
+    "enterprise_name": "วิสาหกิจชุมชน กลุ่มผู้ปลูกผักปลอดภัยจากสารพิษทวีวัฒนา",
+    "business_group": "การผลิตสินค้า",
+    "business_type": "การผลิตพืช",
+    "product_name": "ผักปลอดสารพิษ",
+    "image_url": "https://smce2023.doae.go.th/smce1/images/Product/11048021000120081130200642.JPG"
+  },
+  {
+    "enterprise_name": "วิสาหกิจชุมชน กลุ่มผลิตเส้นไหมเพื่อการค้าบ้านโนนสง่า",
+    "business_group": "การผลิตสินค้า",
+    "business_type": "การผลิตพืช",
+    "product_name": "ไหมน้อยไม่ฟอก",
+    "image_url": "https://smce2023.doae.go.th/smce1/ProductManage/images/star_red.gif"
+  },
+  {
+    "enterprise_name": "วิสาหกิจชุมชน กลุ่มผลิตเส้นไหมเพื่อการค้าบ้านโนนสง่า",
+    "business_group": "การผลิตสินค้า",
+    "business_type": "การผลิตพืช",
+    "product_name": "ไหมหัว",
+    "image_url": "https://smce2023.doae.go.th/smce1/images/Product/43210091000320090116101302.gif"
+  },
+  {
+    "enterprise_name": "วิสาหกิจชุมชน กลุ่มผลิตเส้นไหมเพื่อการค้าบ้านโนนสง่า",
+    "business_group": "การผลิตสินค้า",
+    "business_type": "การผลิตพืช",
+    "product_name": "ไหมน้อยฟอก",
+    "image_url": "https://smce2023.doae.go.th/smce1/images/Product/43210091000320090116101658.gif"
+  },
+  {
+    "enterprise_name": "วิสาหกิจชุมชน กลุ่มผลิตเส้นไหมเพื่อการค้าบ้านโนนสง่า",
+    "business_group": "การผลิตสินค้า",
+    "business_type": "การผลิตพืช",
+    "product_name": "โหลเปราะ",
+    "image_url": "https://smce2023.doae.go.th/smce1/ProductManage/images/star_red.gif"
+  },
+  {
+    "enterprise_name": "วิสาหกิจชุมชน กลุ่มแม่บ้านเกษตรกรรวงทอง",
+    "business_group": "การผลิตสินค้า",
+    "business_type": "การผลิตพืช",
+    "product_name": "หน่อไม้ฝรั่งปลอดสารพิษ",
+    "image_url": "https://smce2023.doae.go.th/smce1/images/Product/44605061000120100322121530.jpg"
+  },
+  {
+    "enterprise_name": "วิสาหกิจชุมชน เกษตรกรไม้ผลบ้านโพน",
+    "business_group": "การผลิตสินค้า",
+    "business_type": "การผลิตพืช",
+    "product_name": "พุทรานมสด พุทราจัมโบ้ พุทราสามรส",
+    "image_url": "https://smce2023.doae.go.th/smce1/images/Product/blank.gif"
+  },
+  {
+    "enterprise_name": "วิสาหกิจชุมชน กลุ่มเกษตรออมทรัพย์แม่บ้านบางวัว",
+    "business_group": "การผลิตสินค้า",
+    "business_type": "การผลิตพืช",
+    "product_name": "เห็ดนางฟ้าภูฐาน",
+    "image_url": "https://smce2023.doae.go.th/smce1/images/Product/11702021000420181221120447.jpg"
+  },
+  {
+    "enterprise_name": "วิสาหกิจชุมชน ผลิตและจำหน่ายเมล็ดพันธุ์ข้าวบ้านท่าคอย",
+    "business_group": "การผลิตสินค้า",
+    "business_type": "การผลิตพืช",
+    "product_name": "เมล็ดพันธุ์ข้าวพันธุ์ดี",
+    "image_url": "https://smce2023.doae.go.th/smce1/images/Product/27205041000620110601110228.jpg"
+  },
+  {
+    "enterprise_name": "วิสาหกิจชุมชน ไม้ดอกไม้ประดับบ้านป่าเสือ",
+    "business_group": "การผลิตสินค้า",
+    "business_type": "การผลิตพืช",
+    "product_name": "ลีลาวดี โคกไม้ไทย",
+    "image_url": "https://smce2023.doae.go.th/smce1/images/Product/32501081000220110708153245.jpg"
+  },
+  {
+    "enterprise_name": "วิสาหกิจชุมชน ไม้ดอกไม้ประดับบ้านม่วงแฝก",
+    "business_group": "การผลิตสินค้า",
+    "business_type": "การผลิตพืช",
+    "product_name": "ไม้ดอกไม้ประดับ",
+    "image_url": "https://smce2023.doae.go.th/smce1/images/Product/32501131000120110708153933.jpg"
+  },
+  {
+    "enterprise_name": "วิสาหกิจชุมชน ไม้ดอกไม้ประดับบ้านเหล่าบุตร หมู่ที่ 6",
+    "business_group": "การผลิตสินค้า",
+    "business_type": "การผลิตพืช",
+    "product_name": "ไม้ดอกไม้ประดับ",
+    "image_url": "https://smce2023.doae.go.th/smce1/images/Product/32501131000320110708165726.jpg"
+  },
+  {
+    "enterprise_name": "วิสาหกิจชุมชน พัฒนาคุณภาพชีวิตสิงห์บุรี",
+    "business_group": "การผลิตสินค้า",
+    "business_type": "การผลิตพืช",
+    "product_name": "เห็ดนางฟ้า",
+    "image_url": "https://smce2023.doae.go.th/smce1/images/Product/11705011001020120912095745.jpg"
+  },
+  {
+    "enterprise_name": "วิสาหกิจชุมชน โรงสีข้าวชุมชน หมู่ 10 ตำบลไร่รถ",
+    "business_group": "การผลิตสินค้า",
+    "business_type": "การผลิตพืช",
+    "product_name": "ข้าวสาร (ปทุมธานี 1)",
+    "image_url": "https://smce2023.doae.go.th/smce1/images/Product/27206031001020110830164633.JPG"
+  },
+  {
+    "enterprise_name": "วิสาหกิจชุมชน ข่าอ่อนบ้านบุ่ง",
+    "business_group": "การผลิตสินค้า",
+    "business_type": "การผลิตพืช",
+    "product_name": "ข่าอ่อน",
+    "image_url": "https://smce2023.doae.go.th/smce1/ProductManage/images/star_red.gif"
+  },
+  {
+    "enterprise_name": "วิสาหกิจชุมชน ศูนย์ส่งเสริมและผลิตภัณฑ์ข้าวชุมชนค้อน้อย",
+    "business_group": "การผลิตสินค้า",
+    "business_type": "การผลิตพืช",
+    "product_name": "ผลิตพันธุ์ข้าวมะลิ105",
+    "image_url": "https://smce2023.doae.go.th/smce1/ProductManage/images/star_red.gif"
+  },
+  {
+    "enterprise_name": "วิสาหกิจชุมชน เกษตรอินทรีย์ครบวงจรบ้านคุ้ม",
+    "business_group": "การผลิตสินค้า",
+    "business_type": "การผลิตพืช",
+    "product_name": "ข้าวซ้อมมือ(ข้าวอินทรีย์)",
+    "image_url": "https://smce2023.doae.go.th/smce1/ProductManage/images/star_red.gif"
+  },
+  {
+    "enterprise_name": "วิสาหกิจชุมชน ปลูกพริกบ้านหนองไฮ",
+    "business_group": "การผลิตสินค้า",
+    "business_type": "การผลิตพืช",
+    "product_name": "พริกสด",
+    "image_url": "https://smce2023.doae.go.th/smce1/ProductManage/images/star_red.gif"
+  },
+  {
+    "enterprise_name": "วิสาหกิจชุมชน ปลูกพริกบ้านโคกสว่าง",
+    "business_group": "การผลิตสินค้า",
+    "business_type": "การผลิตพืช",
+    "product_name": "พริกสด",
+    "image_url": "https://smce2023.doae.go.th/smce1/ProductManage/images/star_red.gif"
+  },
+  {
+    "enterprise_name": "วิสาหกิจชุมชน เพาะเห็ดฟางบ้านหนองจำนัก",
+    "business_group": "การผลิตสินค้า",
+    "business_type": "การผลิตพืช",
+    "product_name": "เพาะเห็ดฟาง",
+    "image_url": "https://smce2023.doae.go.th/smce1/ProductManage/images/star_red.gif"
+  },
+  {
+    "enterprise_name": "วิสาหกิจชุมชน โพนงามข่าอ่อน",
+    "business_group": "การผลิตสินค้า",
+    "business_type": "การผลิตพืช",
+    "product_name": "ข่าอ่อน",
+    "image_url": "https://smce2023.doae.go.th/smce1/ProductManage/images/star_red.gif"
+  },
+  {
+    "enterprise_name": "วิสาหกิจชุมชน กลุ่มผลิตพืชคุณภาพท่าเมือง",
+    "business_group": "การผลิตสินค้า",
+    "business_type": "การผลิตพืช",
+    "product_name": "ข้าวกล้องงอกมะลิอินทรีย์",
+    "image_url": "https://smce2023.doae.go.th/smce1/ProductManage/images/star_red.gif"
+  },
+  {
+    "enterprise_name": "วิสาหกิจชุมชน ผลิตข้าวกล้องบ้านหนองหิน",
+    "business_group": "การผลิตสินค้า",
+    "business_type": "การผลิตพืช",
+    "product_name": "ข้าวกล้องงอกคุณภาพ",
+    "image_url": "https://smce2023.doae.go.th/smce1/images/Product/43424041000120130129112956.jpg"
+  },
+  {
+    "enterprise_name": "วิสาหกิจชุมชน กลุ่มผลิตพืชคุณภาพท่าเมือง",
+    "business_group": "การผลิตสินค้า",
+    "business_type": "การผลิตพืช",
+    "product_name": "ข้าวกล้องอินทรีย์",
+    "image_url": "https://smce2023.doae.go.th/smce1/ProductManage/images/star_red.gif"
+  },
+  {
+    "enterprise_name": "วิสาหกิจชุมชน ท่องเที่ยวเชิงเกษตรบ้านบัวเทิง",
+    "business_group": "การผลิตสินค้า",
+    "business_type": "การผลิตพืช",
+    "product_name": "จำหน่ายพุทรา 3 รส",
+    "image_url": "https://smce2023.doae.go.th/smce1/images/Product/43432021002020130205091901.JPG"
+  },
+  {
+    "enterprise_name": "วิสาหกิจชุมชน เกษตรผสมผสานบ้านโป่งเป้า",
+    "business_group": "การผลิตสินค้า",
+    "business_type": "การผลิตพืช",
+    "product_name": "ข้าวกล้องหอมมะลิ 105",
+    "image_url": "https://smce2023.doae.go.th/smce1/ProductManage/images/star_red.gif"
+  },
+  {
+    "enterprise_name": "วิสาหกิจชุมชน ผลิตเชื้อเห็ดบ้านหนองปลาดุก",
+    "business_group": "การผลิตสินค้า",
+    "business_type": "การผลิตพืช",
+    "product_name": "เห็ดนางฟ้า,นางรม",
+    "image_url": "https://smce2023.doae.go.th/smce1/images/Product/43409111000420130227090530.jpg"
+  },
+  {
+    "enterprise_name": "วิสาหกิจชุมชน กลุ่มสตรีสหกรณ์บ้านบุกลาง",
+    "business_group": "การผลิตสินค้า",
+    "business_type": "การผลิตพืช",
+    "product_name": "ข้าวเกรียบมันเทศ",
+    "image_url": "https://smce2023.doae.go.th/smce1/images/Product/43409061000220130227094542.jpg"
+  },
+  {
+    "enterprise_name": "วิสาหกิจชุมชน กลุ่มปุ๋ยหมักชีวภาพ กลุ่ม 2 บ้านโชคสมบูรณ์",
+    "business_group": "การผลิตสินค้า",
+    "business_type": "การผลิตพืช",
+    "product_name": "ปุ๋ยหมักชีวภาพ",
+    "image_url": "https://smce2023.doae.go.th/smce1/images/Product/43409011001020130227121731.jpg"
+  },
+  {
+    "enterprise_name": "วิสาหกิจชุมชน กลุ่มปุ๋ยหมักชีวภาพ กลุ่ม 2 บ้านโชคสมบูรณ์",
+    "business_group": "การผลิตสินค้า",
+    "business_type": "การผลิตพืช",
+    "product_name": "ผลิตปุ๋ยหมักชีวภาพ",
+    "image_url": "https://smce2023.doae.go.th/smce1/images/Product/43409011001020130227121959.jpg"
+  },
+  {
+    "enterprise_name": "วิสาหกิจชุมชน กลุ่มผลิตและแปรรูปจัดการลำไยสด",
+    "business_group": "การผลิตสินค้า",
+    "business_type": "การผลิตพืช",
+    "product_name": "ลำไยสด",
+    "image_url": "https://smce2023.doae.go.th/smce1/images/Product/65015041002520130312045428.jpg"
+  }
+]
