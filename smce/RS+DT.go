@@ -168,7 +168,7 @@ func fetchProductDetails(enterprise *CommunityEnterprise) {
 		log.Printf("Error creating request for product details: %v", err)
 		return
 	}
-	req.Header.Set("User-Agent", "Mozilla/5.0 (Windows NT 10.0; Win64; x64)")
+	req.Header.Set("User-Agent", "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36")
 
 	client := &http.Client{}
 	resp, err := client.Do(req)
@@ -193,6 +193,7 @@ func fetchProductDetails(enterprise *CommunityEnterprise) {
 
 	// Extract additional product details
 	doc.Find("table tr").Each(func(i int, row *goquery.Selection) {
+		// Extract only the value without the prefix (e.g., "รหัสผลิตภัณฑ์")
 		value := extractDataFromRow(row)
 
 		// Handle price field with unit conversion
@@ -214,8 +215,8 @@ func fetchProductDetails(enterprise *CommunityEnterprise) {
 			enterprise.Phone = cleanField(value)
 		case strings.Contains(value, "โทรสาร"):
 			enterprise.Fax = cleanField(value)
-		case strings.Contains(value, "ผู้มีอำนาจทำการแทน"):
-			enterprise.AuthorityPerson = cleanField(value)
+		case strings.Contains(value, "ผู้มีอำนาจทำการแทน"):  
+			enterprise.AuthorityPerson = cleanField(value) 
 		case strings.Contains(value, "คุณสมบัติ"):
 			enterprise.Properties = cleanField(value)
 		case strings.Contains(value, "องค์ประกอบ"):
@@ -227,11 +228,7 @@ func fetchProductDetails(enterprise *CommunityEnterprise) {
 		case strings.Contains(value, "ความสามารถในการผลิต"):
 			enterprise.ProductionCapacity = cleanField(value)
 		case strings.Contains(value, "มาตรฐาน"):
-			if strings.Contains(value, "มผช.") {
-				enterprise.QualityAssurance = cleanField(value)
-			} else {
-				enterprise.Standards = cleanField(value)
-			}
+			enterprise.Standards = cleanField(value)
 		case strings.Contains(value, "การรับรองคุณภาพ"):
 			enterprise.QualityAssurance = cleanField(value)
 		case strings.Contains(value, "เทศกาลที่ใช้"):
@@ -244,38 +241,47 @@ func fetchProductDetails(enterprise *CommunityEnterprise) {
 
 // Helper function to clean field values
 func cleanField(value string) string {
+	// List of prefixes that we want to remove
 	prefixes := []string{
 		"โทรศัพท์ :", "โทรสาร :", "คุณสมบัติ :",
 		"รหัสผลิตภัณฑ์ :", "รหัสสินค้า :", "รหัสทะเบียน :", "ที่ตั้ง :", "องค์ประกอบ :",
-		"ข้อมูลโภชนาการ :", "ระยะเวลาการผลิต :", "ความสามารถในการผลิต :", "ราคา :",
+		"ข้อมูลโภชนาการ :", "ระยะเวลาการผลิต :", "ความสามารถในการผลิต :", "ราคา :", 
 		"มาตรฐาน :", "การรับรองคุณภาพ :", "เทศกาลที่ใช้ :", "ช่องทางการจัดจำหน่าย :", "ผู้มีอำนาจทำการแทน :",
 	}
 
+	// Iterate through all prefixes and remove them if they match
 	for _, prefix := range prefixes {
 		if strings.HasPrefix(value, prefix) {
+			// If the value starts with the prefix, remove it but keep what's after ":"
 			value = strings.TrimSpace(strings.TrimPrefix(value, prefix))
 			break
 		}
 	}
 
+	// Return cleaned value
 	return value
 }
 
 // Extract value from table row
 func extractDataFromRow(row *goquery.Selection) string {
+	// Clean and return the value from the row
 	value := strings.TrimSpace(row.Text())
 	return strings.Join(strings.Fields(value), " ")
 }
 
 // Convert price to a standard unit (e.g., per kilogram)
 func handlePriceField(value string) float64 {
+	// Check for price unit (e.g., "ต่อ ตัน", "ต่อ ถุง")
+	// For simplicity, we assume prices are either per ton or per bag
 	priceRegex := regexp.MustCompile(`([0-9,]+(\.[0-9]{1,2})?)\s*(ต่อ\s*(ตัน|ถุง))?`)
 	matches := priceRegex.FindStringSubmatch(value)
 
+	// If no price found, return 0
 	if len(matches) == 0 {
 		return 0
 	}
 
+	// Extract the numeric value and remove commas
 	priceStr := strings.Replace(matches[1], ",", "", -1)
 	price, err := strconv.ParseFloat(priceStr, 64)
 	if err != nil {
@@ -283,10 +289,15 @@ func handlePriceField(value string) float64 {
 		return 0
 	}
 
+	// Check if price is per "ตัน" (ton) or "ถุง" (bag), and convert to standard unit if needed
 	if len(matches) > 3 {
 		unit := matches[4]
 		if unit == "ตัน" {
+			// Convert price to per kilogram
 			price = price / 1000.0
+		} else if unit == "ถุง" {
+			// If "ถุง", assume 1 bag = 1 kilogram for simplicity
+			// If needed, you can define the actual conversion logic for bags
 		}
 	}
 
@@ -295,18 +306,21 @@ func handlePriceField(value string) float64 {
 
 // Save data to JSON file
 func saveToJSON(data []CommunityEnterprise) {
+	// Create and open the output.json file for writing
 	file, err := os.Create("output.json")
 	if err != nil {
 		log.Fatalf("Error creating file: %v", err)
 	}
 	defer file.Close()
 
+	// Create a JSON encoder with indentation (pretty print)
 	encoder := json.NewEncoder(file)
-	encoder.SetIndent("", "  ")
+	encoder.SetIndent("", "  ")  // เพิ่มการจัดระเบียบให้ JSON ดูง่าย
 
+	// Encode the data and write it to the file
 	if err := encoder.Encode(data); err != nil {
 		log.Fatalf("Error saving data to JSON: %v", err)
 	}
 
-	log.Println("Data saved to output.json")
+	log.Println("Data saved to output.json")  // แจ้งว่าข้อมูลถูกบันทึกเรียบร้อย
 }
