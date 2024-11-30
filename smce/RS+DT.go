@@ -10,6 +10,7 @@ import (
 	"regexp"
 	"strings"
 	"time"
+	"strconv"
 
 	"github.com/PuerkitoBio/goquery"
 	"golang.org/x/text/encoding/charmap"
@@ -28,18 +29,17 @@ type CommunityEnterprise struct {
 	Address              string `json:"address"`
 	Phone                string `json:"phone"`
 	Fax                  string `json:"fax"`
+	AuthorityPerson      string `json:"authority_person"`
 	Properties           string `json:"properties"`
 	Composition          string `json:"composition"`
 	NutritionInfo        string `json:"nutrition_info"`
 	ProductionPeriod     string `json:"production_period"`
 	ProductionCapacity   string `json:"production_capacity"`
-	PricePerTon          string `json:"price_per_ton"`
+	Price                string `json:"price"`
 	Standards            string `json:"standards"`
 	QualityAssurance     string `json:"quality_assurance"`
 	SeasonalUse          string `json:"seasonal_use"`
 	DistributionChannels string `json:"distribution_channels"`
-	Latitude             string `json:"latitude"`
-	Longitude            string `json:"longitude"`
 }
 
 func main() {
@@ -62,7 +62,7 @@ func fetchCommunityEnterprises(allData *[]CommunityEnterprise) {
 	}
 
 	// Loop to fetch multiple pages
-	for page := 1; page <= 5; page++ {
+	for page := 1; page <= 162; page++ {
 		url := fmt.Sprintf(baseURL, page)
 		// Fetching community enterprise page
 		log.Printf("Fetching community enterprise page %d...\n", page)
@@ -168,7 +168,7 @@ func fetchProductDetails(enterprise *CommunityEnterprise) {
 		log.Printf("Error creating request for product details: %v", err)
 		return
 	}
-	req.Header.Set("User-Agent", "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36")
+	req.Header.Set("User-Agent", "Mozilla/5.0 (Windows NT 10.0; Win64; x64)")
 
 	client := &http.Client{}
 	resp, err := client.Do(req)
@@ -193,8 +193,12 @@ func fetchProductDetails(enterprise *CommunityEnterprise) {
 
 	// Extract additional product details
 	doc.Find("table tr").Each(func(i int, row *goquery.Selection) {
-		// Extract only the value without the prefix (e.g., "รหัสผลิตภัณฑ์")
 		value := extractDataFromRow(row)
+
+		// Handle price field with unit conversion
+		if strings.Contains(value, "ราคา") {
+			enterprise.Price = fmt.Sprintf("%.2f", handlePriceField(value))
+		}
 
 		// Store the value in the corresponding field
 		switch {
@@ -202,83 +206,106 @@ func fetchProductDetails(enterprise *CommunityEnterprise) {
 			enterprise.PSID = cleanField(value)
 		case strings.Contains(value, "รหัสสินค้า"):
 			enterprise.SMCEID = cleanField(value)
-		case strings.Contains(value, "รหัสการจดทะเบียน"):
+		case strings.Contains(value, "รหัสทะเบียน"):
 			enterprise.RegistrationCode = cleanField(value)
-		case strings.Contains(value, "ที่อยู่"):
+		case strings.Contains(value, "ที่ตั้ง"):
 			enterprise.Address = cleanField(value)
 		case strings.Contains(value, "โทรศัพท์"):
 			enterprise.Phone = cleanField(value)
 		case strings.Contains(value, "โทรสาร"):
 			enterprise.Fax = cleanField(value)
+		case strings.Contains(value, "ผู้มีอำนาจทำการแทน"):
+			enterprise.AuthorityPerson = cleanField(value)
 		case strings.Contains(value, "คุณสมบัติ"):
 			enterprise.Properties = cleanField(value)
-		case strings.Contains(value, "ส่วนประกอบ"):
+		case strings.Contains(value, "องค์ประกอบ"):
 			enterprise.Composition = cleanField(value)
-		case strings.Contains(value, "ข้อมูลทางโภชนาการ"):
+		case strings.Contains(value, "ข้อมูลโภชนาการ"):
 			enterprise.NutritionInfo = cleanField(value)
-		case strings.Contains(value, "ระยะเวลาในการผลิต"):
+		case strings.Contains(value, "ระยะเวลาการผลิต"):
 			enterprise.ProductionPeriod = cleanField(value)
-		case strings.Contains(value, "กำลังการผลิต"):
+		case strings.Contains(value, "ความสามารถในการผลิต"):
 			enterprise.ProductionCapacity = cleanField(value)
-		case strings.Contains(value, "ราคาต่อตัน"):
-			enterprise.PricePerTon = cleanField(value)
 		case strings.Contains(value, "มาตรฐาน"):
-			enterprise.Standards = cleanField(value)
+			if strings.Contains(value, "มผช.") {
+				enterprise.QualityAssurance = cleanField(value)
+			} else {
+				enterprise.Standards = cleanField(value)
+			}
 		case strings.Contains(value, "การรับรองคุณภาพ"):
 			enterprise.QualityAssurance = cleanField(value)
-		case strings.Contains(value, "ฤดูกาลที่ใช้"):
+		case strings.Contains(value, "เทศกาลที่ใช้"):
 			enterprise.SeasonalUse = cleanField(value)
 		case strings.Contains(value, "ช่องทางการจัดจำหน่าย"):
 			enterprise.DistributionChannels = cleanField(value)
-		case strings.Contains(value, "พิกัดละติจูด"):
-			enterprise.Latitude = cleanField(value)
-		case strings.Contains(value, "พิกัดลองจิจูด"):
-			enterprise.Longitude = cleanField(value)
 		}
 	})
 }
 
-func extractDataFromRow(row *goquery.Selection) string {
-	// Clean and return the value from the row
-	value := strings.TrimSpace(row.Text())
-	return strings.Join(strings.Fields(value), " ")
-}
-
+// Helper function to clean field values
 func cleanField(value string) string {
-	// List of prefixes that we want to remove
 	prefixes := []string{
-		"โทรศัพท์ :", "โทรสาร :", "คุณสมบัติ :", "พิกัดละติจูด :", "พิกัดลองจิจูด :",
-		"รหัสผลิตภัณฑ์ :", "รหัสสินค้า :", "รหัสการจดทะเบียน :", "ที่อยู่ :", "ส่วนประกอบ :",
-		"ข้อมูลทางโภชนาการ :", "ระยะเวลาในการผลิต :", "กำลังการผลิต :", "ราคาต่อตัน :", 
-		"มาตรฐาน :", "การรับรองคุณภาพ :", "ฤดูกาลที่ใช้ :", "ช่องทางการจัดจำหน่าย :",
+		"โทรศัพท์ :", "โทรสาร :", "คุณสมบัติ :",
+		"รหัสผลิตภัณฑ์ :", "รหัสสินค้า :", "รหัสทะเบียน :", "ที่ตั้ง :", "องค์ประกอบ :",
+		"ข้อมูลโภชนาการ :", "ระยะเวลาการผลิต :", "ความสามารถในการผลิต :", "ราคา :",
+		"มาตรฐาน :", "การรับรองคุณภาพ :", "เทศกาลที่ใช้ :", "ช่องทางการจัดจำหน่าย :", "ผู้มีอำนาจทำการแทน :",
 	}
 
-	// Iterate through all prefixes and remove them if they match
 	for _, prefix := range prefixes {
 		if strings.HasPrefix(value, prefix) {
-			// If the value starts with the prefix, remove it but keep what's after ":"
 			value = strings.TrimSpace(strings.TrimPrefix(value, prefix))
 			break
 		}
 	}
 
-	// Return cleaned value
 	return value
 }
 
+// Extract value from table row
+func extractDataFromRow(row *goquery.Selection) string {
+	value := strings.TrimSpace(row.Text())
+	return strings.Join(strings.Fields(value), " ")
+}
+
+// Convert price to a standard unit (e.g., per kilogram)
+func handlePriceField(value string) float64 {
+	priceRegex := regexp.MustCompile(`([0-9,]+(\.[0-9]{1,2})?)\s*(ต่อ\s*(ตัน|ถุง))?`)
+	matches := priceRegex.FindStringSubmatch(value)
+
+	if len(matches) == 0 {
+		return 0
+	}
+
+	priceStr := strings.Replace(matches[1], ",", "", -1)
+	price, err := strconv.ParseFloat(priceStr, 64)
+	if err != nil {
+		log.Printf("Error parsing price: %v", err)
+		return 0
+	}
+
+	if len(matches) > 3 {
+		unit := matches[4]
+		if unit == "ตัน" {
+			price = price / 1000.0
+		}
+	}
+
+	return price
+}
+
+// Save data to JSON file
 func saveToJSON(data []CommunityEnterprise) {
-	// Open file to write the JSON data
 	file, err := os.Create("output.json")
 	if err != nil {
-		log.Fatalf("Error creating JSON file: %v", err)
+		log.Fatalf("Error creating file: %v", err)
 	}
 	defer file.Close()
 
-	// Marshal the data to JSON format
 	encoder := json.NewEncoder(file)
 	encoder.SetIndent("", "  ")
+
 	if err := encoder.Encode(data); err != nil {
-		log.Fatalf("Error encoding JSON data: %v", err)
+		log.Fatalf("Error saving data to JSON: %v", err)
 	}
 
 	log.Println("Data saved to output.json")
